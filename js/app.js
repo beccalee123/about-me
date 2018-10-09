@@ -44,3 +44,13 @@ if (answerFour === 'yes'|| answerFour === 'y') {
     alert('Clearly you\'re not smelling what The Rock is cooking, because I\'m a big fan, ' + username + '!');
     console.log('The user did not answer question 4 correctly');
 }
+
+var answerFive = prompt('Do I have any tattoos?').toLowerCase();
+
+if (answerFive === 'no' || answerFive === 'n') {
+    alert('You\'re right, ' + username + '. I like tattoos, but I\'ve never been able to decide on something!');
+    console.log('The user answered question 5 correctly');
+} else {
+    alert('I know a lot of people have tattoos, ' + username + ', but I\'ve never gotten one.');
+    console.log('The user did not answer question 5 correctly');
+}
