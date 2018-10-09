@@ -34,3 +34,13 @@ if (answerThree === 'yes' || answerThree === 'y') {
     alert('You\'re very wrong, ' + username + '. I eat ice cream almost every day.');
     console.log('The user did not answer question 3 correctly');
 }
+
+var answerFour = prompt('Do I like Pro Wrestling?').toLowerCase();
+
+if (answerFour === 'yes'|| answerFour === 'y') {
+    alert('Correct! While most people are fans from childhood, it may surprise you to hear, ' + username + ', that I started watchin just 3 years ago');
+    console.log('The user answered question 4 correctly');
+}else {
+    alert('Clearly you\'re not smelling what The Rock is cooking, because I\'m a big fan, ' + username + '!');
+    console.log('The user did not answer question 4 correctly');
+}
