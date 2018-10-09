@@ -14,3 +14,13 @@ if (answerOne === 'yes' || answerOne === 'y') {
     alert('Nice try, ' + username + ', but I actually have two cats!');
     console.log('The user did not answer the question correctly');
 }
+
+var answerTwo = prompt('Do I like butterflies?').toLowerCase();
+
+if (answerTwo === 'no' || answerTwo === 'n') {
+    alert('Nice work, ' + username + '! I was forever scarred by an 8th grade science class video *shudders*');
+    console.log('The user answered the question correctly');
+}else {
+    alert('I\'m afraid you\'re wrong, ' + username + '. I was traumatized by a science video in 8th grade');
+    console.log('The user did not answet the question correctly');
+}
