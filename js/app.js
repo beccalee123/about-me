@@ -72,15 +72,15 @@ while (counter > 0 && answerSix !== 12) {
     console.log('The user answered question 6 correctly with ' + counter + ' more guesses');
   } else if (answerSix > 12) {
     alert('Too high, ' + username + '. You have ' + counter + ' more guesses');
-    console.log('The user answered incorrectly with too high of a number. They have ' + counter + ' more guesses')
+    console.log('The user answered question 6 incorrectly with too high of a number. They have ' + counter + ' more guesses')
   } else if (answerSix < 12) {
     alert('Nice try, but you\'re too low, ' + username + '. You have ' + counter + ' more guesses');
-    console.log('The user answered incorrectly with too low of a number. They have ' + counter + ' more guesses')
+    console.log('The user answered question 6 incorrectly with too low of a number. They have ' + counter + ' more guesses')
   }
 
   if (counter === 0) {
     alert('A valiant effort, ' + username + ', but the number was 12!');
-    console.log('The user ran out of guesses and was told the answer')
+    console.log('The user ran out of guesses for question 6 and was told the answer')
   }
 }
 
@@ -95,17 +95,17 @@ while (iceCreamCounter > 0 && correctAnswer) {
       alert('Dang, you\'re good at this, ' + username + '! My favorites are ' + iceCreamFlavors[0] + ', ' + iceCreamFlavors[1] + ', ' + iceCreamFlavors[2] + ', ' + iceCreamFlavors[3] + '!');
       correctAnswer = false;
       totalCorrect++;
-      console.log('The user answered correctly');
+      console.log('The user answered question 7 correctly');
     }
   }
   iceCreamCounter--;
   if (iceCreamCounter > 0 && correctAnswer) {
     alert('Sorry, that flavor sounds good, ' + username + ', but it\'s not one of my favorites. You have ' + iceCreamCounter + ' more guesses.');
-    console.log('The user answered incorrectly and has ' + iceCreamCounter + ' more guesses.')
+    console.log('The user answered question 7 incorrectly and has ' + iceCreamCounter + ' more guesses.')
   }
   if (iceCreamCounter === 0) {
     alert('Nice try, ' + username + ', but the my favorite flavors of ice cream are ' + iceCreamFlavors[0] + ', ' + iceCreamFlavors[1] + ', ' + iceCreamFlavors[2] + ', ' + iceCreamFlavors[3] + '!');
-    console.log('The user ran out of guesses and was told the answer');
+    console.log('The user ran out of guesses for question 7 and was told the answer');
   }
 }
 
