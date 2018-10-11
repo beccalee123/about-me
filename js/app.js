@@ -92,7 +92,7 @@ while (iceCreamCounter > 0 && correctAnswer) {
   var answerSeven = prompt('Can you guess one of my favorite ice cream flavors? You have ' + iceCreamCounter + ' guesses.').toLowerCase();
   for (var i = 0; i < iceCreamFlavors.length; i++) {
     if (answerSeven === iceCreamFlavors[i]) {
-      alert('Dang, you\'re good at this, ' + username + '! My favorites are ' + iceCreamFlavors[0] + ', ' + iceCreamFlavors[1] + ', ' + iceCreamFlavors[2] + ', ' + iceCreamFlavors[3] + '!');
+      alert('Dang, you\'re good at this, ' + username + '! My favorites are ' + iceCreamFlavors[0] + ', ' + iceCreamFlavors[1] + ', ' + iceCreamFlavors[2] + ', and ' + iceCreamFlavors[3] + '!');
       correctAnswer = false;
       totalCorrect++;
       console.log('The user answered question 7 correctly');
@@ -104,7 +104,7 @@ while (iceCreamCounter > 0 && correctAnswer) {
     console.log('The user answered question 7 incorrectly and has ' + iceCreamCounter + ' more guesses.')
   }
   if (iceCreamCounter === 0) {
-    alert('Nice try, ' + username + ', but the my favorite flavors of ice cream are ' + iceCreamFlavors[0] + ', ' + iceCreamFlavors[1] + ', ' + iceCreamFlavors[2] + ', ' + iceCreamFlavors[3] + '!');
+    alert('Nice try, ' + username + ', but the my favorite flavors of ice cream are ' + iceCreamFlavors[0] + ', ' + iceCreamFlavors[1] + ', ' + iceCreamFlavors[2] + ', and ' + iceCreamFlavors[3] + '!');
     console.log('The user ran out of guesses for question 7 and was told the answer');
   }
 }
