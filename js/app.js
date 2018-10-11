@@ -66,7 +66,6 @@ var counter = 4
 while (counter > 0 && answerSix !== 12) {
   var answerSix = Number(prompt('What number am I thinking of? You get ' + counter + ' guesses!'));
   counter--;
-
   if (answerSix === 12) {
     alert('You\'re right! Wow, you\'re a good guesser, ' + username + '!'); totalCorrect++;
     console.log('The user answered question 6 correctly with ' + counter + ' more guesses');
@@ -93,7 +92,7 @@ while (iceCreamCounter > 0 && correctAnswer) {
   for (var i = 0; i < iceCreamFlavors.length; i++) {
     if (answerSeven === iceCreamFlavors[i]) {
       alert('Dang, you\'re good at this, ' + username + '! My favorites are ' + iceCreamFlavors[0] + ', ' + iceCreamFlavors[1] + ', ' + iceCreamFlavors[2] + ', and ' + iceCreamFlavors[3] + '!');
-      correctAnswer = false;
+      correctAnswer = false; //breaks for loop & while loop
       totalCorrect++;
       console.log('The user answered question 7 correctly');
     }
